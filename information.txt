@@ -1,0 +1,29 @@
+emisab/
+│
+├── index.html                 # Inicio
+├── nosotros.html              # Sobre nosotros
+├── servicios.html             # Todos los servicios
+├── convocatorias.html         # Convocatorias para profesionales
+├── contacto.html              # Contacto, formulario, cuentas, mapa
+├── 404.html                   # Página de error (opcional)
+│
+├── css/
+│   ├── style.css              # Estilos globales
+│   └── responsive.css         # Estilos responsivos
+│
+├── js/
+│   ├── main.js                # Funcionalidades generales
+│   ├── contacto.js            # Formulario a Google Sheets
+│   └── convocatorias.js       # Formulario de postulantes
+│
+├── img/
+│   ├── hero-bg.jpg            # (futuro) Imagen de fondo
+│   ├── oficina.jpg            # (futuro) Foto de oficina
+│   └── equipo.jpg             # (futuro) Foto del equipo
+│
+├── assets/
+│   ├── fonts/                 # Fuentes locales (opcional)
+│   └── icons/                 # Iconos personalizados
+│
+├── .htaccess                  # (opcional) Para redirecciones
+└── README.md                  # Instrucciones del proyecto
