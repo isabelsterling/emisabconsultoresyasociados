@@ -1,0 +1,808 @@
+/* ============================================
+   RESPONSIVE - TODAS LAS PÁGINAS
+   ============================================ */
+
+/* ============================================
+   TABLETS (max-width: 1024px)
+   ============================================ */
+@media (max-width: 1024px) {
+    /* Servicios */
+    .servicios-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Convocatorias anteriores */
+    .anteriores-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Cuentas bancarias */
+    .cuentas-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 700px;
+    }
+    
+    /* Valores */
+    .valores-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 700px;
+    }
+    
+    /* Hero */
+    .hero-text h1 {
+        font-size: 2.3rem;
+    }
+    
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
+
+/* ============================================
+   TABLETS PEQUEÑAS / MÓVILES GRANDES (max-width: 768px)
+   ============================================ */
+@media (max-width: 768px) {
+    /* ===== HEADER ===== */
+    .nav-toggle {
+        display: block;
+    }
+    
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1.5rem 0;
+        width: 100%;
+        border-top: 1px solid var(--color-border);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: var(--color-white);
+        padding: 1.5rem 24px;
+        box-shadow: var(--shadow);
+    }
+    
+    .nav-menu.open {
+        display: flex;
+    }
+    
+    .nav-menu li a {
+        display: block;
+        padding: 10px 0;
+        border-bottom: none;
+        font-size: 1rem;
+    }
+    
+    .nav-menu li a::after {
+        display: none;
+    }
+    
+    .nav-menu li a:hover,
+    .nav-menu li a.active {
+        border-bottom: none;
+        color: var(--color-primary);
+    }
+    
+    .nav-contacto {
+        display: none;
+    }
+    
+    /* ===== PAGE HEADER ===== */
+    .page-header {
+        padding: 40px 0 30px;
+    }
+    
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .page-header p {
+        font-size: 1rem;
+    }
+    
+    /* ===== HERO ===== */
+    .hero {
+        padding: 50px 0;
+        min-height: auto;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-text p {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1rem;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+        flex-direction: column;
+        align-items: stretch;
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .hero-buttons .btn-primary,
+    .hero-buttons .btn-urgente {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .hero-contacto-rapido {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .hero-image {
+        display: none;
+    }
+    
+    /* ===== NOSOTROS RESUMEN ===== */
+    .nosotros-resumen-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .nosotros-resumen-imagen {
+        order: -1;
+    }
+    
+    .nosotros-resumen-texto .btn-secondary {
+        justify-content: center;
+        width: 100%;
+        max-width: 250px;
+    }
+    
+    /* ===== SERVICIOS ===== */
+    .servicios-grid {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    
+    .servicios-resumen {
+        padding: 50px 0;
+    }
+    
+    /* ===== SERVICIOS DETALLE ===== */
+    .servicio-detalle-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    
+    .servicio-detalle-icono {
+        justify-content: center;
+    }
+    
+    .servicio-detalle-info h2 {
+        font-size: 1.5rem;
+    }
+    
+    .servicio-detalle-info > p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .servicio-detalle-lista {
+        grid-template-columns: 1fr;
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .servicio-detalle-lista li {
+        justify-content: center;
+    }
+    
+    .servicio-detalle-info .btn-primary {
+        justify-content: center;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    /* ===== MODALIDADES ===== */
+    .modalidades-grid {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    
+    .modalidades {
+        padding: 50px 0;
+    }
+    
+    .modalidad-card {
+        padding: 1.75rem;
+    }
+    
+    /* ===== NOSOTROS - HISTORIA ===== */
+    .nosotros-historia-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .nosotros-historia-imagen {
+        order: -1;
+    }
+    
+    .nosotros-datos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .nosotros-historia {
+        padding: 50px 0;
+    }
+    
+    /* ===== EQUIPO ===== */
+    .equipo-grid {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    
+    .equipo-card-destacado {
+        order: -1;
+    }
+    
+    .equipo {
+        padding: 50px 0;
+    }
+    
+    /* ===== VALORES ===== */
+    .valores-grid {
+        grid-template-columns: 1fr 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .valores {
+        padding: 50px 0;
+    }
+    
+    /* ===== CONVOCATORIA ===== */
+    .convocatoria-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .convocatoria-estado {
+        text-align: left;
+    }
+    
+    .convocatoria-seccion {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+        padding: 1.25rem 0;
+    }
+    
+    .seccion-icono {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .seccion-icono i {
+        font-size: 1rem;
+    }
+    
+    .disponibilidad-grid {
+        grid-template-columns: 1fr;
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .convocatoria-subseccion {
+        grid-template-columns: 1fr;
+    }
+    
+    .convocatoria-whatsapp {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .whatsapp-info {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .convocatoria-enlaces {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .btn-enlace,
+    .btn-enlace-mapa {
+        justify-content: center;
+    }
+    
+    .convocatoria-detalle {
+        padding: 40px 0 30px;
+    }
+    
+    .convocatoria-intro {
+        padding: 1rem 1.25rem;
+    }
+    
+    .convocatoria-postular {
+        padding: 1.5rem;
+    }
+    
+    .convocatoria-qr {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .qr-texto {
+        text-align: center;
+    }
+    
+    /* ===== CONVOCATORIAS ANTERIORES ===== */
+    .convocatorias-anteriores {
+        padding: 30px 0 50px;
+    }
+    
+    .anteriores-grid {
+        grid-template-columns: 1fr 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    /* ===== CONTACTO ===== */
+    .contacto-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contacto-info {
+        padding: 40px 0;
+    }
+    
+    .contacto-formulario {
+        padding: 1.5rem;
+    }
+    
+    .contacto-item {
+        padding: 0.75rem 0;
+    }
+    
+    /* ===== CUENTAS BANCARIAS ===== */
+    .cuentas-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .cuentas-bancarias {
+        padding: 40px 0;
+    }
+    
+    /* ===== MAPA ===== */
+    .mapa-section {
+        padding: 40px 0;
+    }
+    
+    .mapa-container iframe {
+        height: 280px;
+    }
+    
+    /* ===== CONTACTO RÁPIDO ===== */
+    .contacto-rapido-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .contacto-rapido-botones {
+        justify-content: center;
+        flex-direction: column;
+        align-items: stretch;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    
+    .contacto-rapido-botones .btn-primary,
+    .contacto-rapido-botones .btn-whatsapp {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .contacto-telefonos {
+        align-items: center;
+        margin-left: 0;
+    }
+    
+    .contacto-rapido {
+        padding: 40px 0;
+    }
+    
+    /* ===== FOOTER ===== */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    
+    .footer-contacto li,
+    .footer-horario li {
+        justify-content: center;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    
+    .footer {
+        padding: 40px 0 20px;
+    }
+    
+    /* ===== SECCIONES GENERALES ===== */
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .section-header {
+        margin-bottom: 2rem;
+    }
+    
+    .container {
+        padding: 0 16px;
+    }
+}
+
+/* ============================================
+   MÓVILES PEQUEÑOS (max-width: 480px)
+   ============================================ */
+@media (max-width: 480px) {
+    /* ===== TIPOGRAFÍA ===== */
+    h1 {
+        font-size: 1.8rem !important;
+    }
+    
+    h2 {
+        font-size: 1.5rem !important;
+    }
+    
+    h3 {
+        font-size: 1.1rem !important;
+    }
+    
+    .section-header h2 {
+        font-size: 1.4rem !important;
+    }
+    
+    /* ===== BOTONES ===== */
+    .btn-primary,
+    .btn-secondary,
+    .btn-whatsapp,
+    .btn-urgente {
+        padding: 12px 20px !important;
+        font-size: 0.9rem !important;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .hero-buttons {
+        max-width: 100%;
+    }
+    
+    .hero-buttons .btn-primary,
+    .hero-buttons .btn-urgente {
+        padding: 12px 20px !important;
+        font-size: 0.9rem !important;
+    }
+    
+    /* ===== HERO ===== */
+    .hero-text h1 {
+        font-size: 1.6rem !important;
+    }
+    
+    .hero-text p {
+        font-size: 0.95rem;
+    }
+    
+    .hero-contacto-rapido {
+        font-size: 0.8rem;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    
+    /* ===== SERVICIOS ===== */
+    .servicio-card {
+        padding: 1.25rem;
+    }
+    
+    .servicio-card ul li {
+        font-size: 0.85rem;
+    }
+    
+    /* ===== SERVICIOS DETALLE ===== */
+    .servicio-detalle {
+        padding: 30px 0;
+    }
+    
+    .icono-grande {
+        width: 64px;
+        height: 64px;
+    }
+    
+    .icono-grande i {
+        font-size: 2rem;
+    }
+    
+    .servicio-detalle-info h2 {
+        font-size: 1.3rem !important;
+    }
+    
+    .servicio-detalle-lista {
+        max-width: 100%;
+    }
+    
+    .servicio-detalle-lista li {
+        font-size: 0.85rem;
+        text-align: left;
+        justify-content: flex-start;
+    }
+    
+    /* ===== MODALIDADES ===== */
+    .modalidad-card {
+        padding: 1.25rem;
+    }
+    
+    .modalidad-card ul li {
+        font-size: 0.85rem;
+        text-align: left;
+    }
+    
+    /* ===== EQUIPO ===== */
+    .equipo-imagen-placeholder {
+        width: 100px;
+        height: 100px;
+        font-size: 2.5rem;
+    }
+    
+    .equipo-card {
+        padding: 1.25rem;
+    }
+    
+    .equipo-detalles p {
+        font-size: 0.8rem;
+    }
+    
+    .equipo-contacto {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .equipo-btn,
+    .equipo-btn-whatsapp {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    /* ===== VALORES ===== */
+    .valores-grid {
+        grid-template-columns: 1fr;
+        max-width: 350px;
+    }
+    
+    .valor-card p {
+        max-width: 100%;
+    }
+    
+    /* ===== CONVOCATORIA ===== */
+    .convocatoria-titulo h2 {
+        font-size: 1.5rem !important;
+    }
+    
+    .convocatoria-seccion {
+        padding: 1rem 0;
+    }
+    
+    .seccion-contenido ul li,
+    .seccion-contenido ol li {
+        font-size: 0.85rem;
+    }
+    
+    .disponibilidad-item {
+        padding: 0.75rem 1rem;
+    }
+    
+    .disponibilidad-item span {
+        font-size: 0.85rem;
+    }
+    
+    .convocatoria-documentos {
+        padding: 0.75rem 1rem;
+    }
+    
+    .convocatoria-documentos ul li {
+        font-size: 0.8rem;
+    }
+    
+    .qr-placeholder {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .qr-placeholder i {
+        font-size: 2.5rem;
+    }
+    
+    .qr-texto p {
+        font-size: 0.85rem;
+    }
+    
+    /* ===== CONVOCATORIAS ANTERIORES ===== */
+    .anteriores-grid {
+        grid-template-columns: 1fr;
+        max-width: 350px;
+    }
+    
+    .anterior-card-body h4 {
+        font-size: 0.95rem;
+    }
+    
+    .anterior-card-body ul li {
+        font-size: 0.75rem;
+    }
+    
+    /* ===== CONTACTO ===== */
+    .contacto-formulario {
+        padding: 1rem;
+    }
+    
+    .contacto-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .contacto-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .contacto-icon i {
+        font-size: 1rem;
+    }
+    
+    .contacto-valor {
+        font-size: 0.95rem;
+    }
+    
+    .contacto-urgencia-box {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.9rem;
+        padding: 10px 14px;
+    }
+    
+    /* ===== CUENTAS BANCARIAS ===== */
+    .cuenta-card {
+        padding: 1.25rem;
+    }
+    
+    .cuenta-numero {
+        font-size: 0.85rem;
+        flex-wrap: wrap;
+    }
+    
+    .cuenta-banco i {
+        font-size: 1.5rem;
+    }
+    
+    .cuenta-banco span {
+        font-size: 1.1rem;
+    }
+    
+    /* ===== MAPA ===== */
+    .mapa-container iframe {
+        height: 200px;
+    }
+    
+    /* ===== FOOTER ===== */
+    .footer-logo .logo-principal {
+        font-size: 1.3rem;
+    }
+    
+    .footer-col p {
+        font-size: 0.85rem;
+    }
+    
+    .footer-contacto li,
+    .footer-horario li {
+        font-size: 0.85rem;
+    }
+    
+    /* ===== BOTÓN FLOTANTE WHATSAPP ===== */
+    .btn-whatsapp-flotante {
+        width: 52px;
+        height: 52px;
+        font-size: 1.6rem;
+        bottom: 16px;
+        right: 16px;
+    }
+}
+
+/* ============================================
+   MÓVILES MUY PEQUEÑOS (max-width: 360px)
+   ============================================ */
+@media (max-width: 360px) {
+    .container {
+        padding: 0 12px;
+    }
+    
+    .hero-text h1 {
+        font-size: 1.4rem !important;
+    }
+    
+    .page-header h1 {
+        font-size: 1.6rem !important;
+    }
+    
+    .logo-principal {
+        font-size: 1.2rem !important;
+    }
+    
+    .logo-secundario {
+        font-size: 0.6rem !important;
+    }
+    
+    .btn-primary,
+    .btn-secondary,
+    .btn-whatsapp,
+    .btn-urgente {
+        font-size: 0.8rem !important;
+        padding: 10px 16px !important;
+    }
+    
+    .servicio-card {
+        padding: 1rem;
+    }
+    
+    .modalidad-card {
+        padding: 1rem;
+    }
+    
+    .equipo-card {
+        padding: 1rem;
+    }
+    
+    .contacto-formulario {
+        padding: 0.75rem;
+    }
+    
+    .cuenta-card {
+        padding: 1rem;
+    }
+    
+    .cuenta-numero {
+        font-size: 0.75rem;
+        flex-wrap: wrap;
+    }
+}

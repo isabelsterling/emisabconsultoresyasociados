@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página no encontrada - EMISAB CONSULTORES & ASOCIADOS</title>
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        /* ============================================
+           RESET Y VARIABLES
+           ============================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --color-primary: #1B4D3E;
+            --color-primary-dark: #14382D;
+            --color-secondary: #1E1E1E;
+            --color-background: #F5F6F8;
+            --color-text: #2D2D2D;
+            --color-text-light: #6B6B6B;
+            --color-white: #FFFFFF;
+            --font-serif: 'Merriweather', serif;
+            --font-sans: 'Open Sans', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background: var(--color-background);
+            color: var(--color-text);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+
+        /* ============================================
+           CONTENEDOR 404
+           ============================================ */
+        .error-container {
+            text-align: center;
+            max-width: 600px;
+            padding: 40px;
+            background: var(--color-white);
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        .error-codigo {
+            font-family: var(--font-serif);
+            font-size: 8rem;
+            font-weight: 900;
+            color: var(--color-primary);
+            line-height: 1;
+            opacity: 0.15;
+            margin-bottom: -1.5rem;
+        }
+
+        .error-icono {
+            font-size: 4rem;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+            opacity: 0.6;
+        }
+
+        .error-container h1 {
+            font-family: var(--font-serif);
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--color-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .error-container p {
+            color: var(--color-text-light);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .error-botones {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--color-primary);
+            color: var(--color-white);
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 14px 32px;
+            border-radius: 8px;
+            border: 2px solid var(--color-primary);
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .btn-primary:hover {
+            background: var(--color-primary-dark);
+            border-color: var(--color-primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+        }
+
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: transparent;
+            color: var(--color-primary);
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 14px 32px;
+            border-radius: 8px;
+            border: 2px solid var(--color-primary);
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .btn-secondary:hover {
+            background: var(--color-primary);
+            color: var(--color-white);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+        }
+
+        .error-contacto {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #E8ECEF;
+            font-size: 0.9rem;
+            color: var(--color-text-light);
+        }
+
+        .error-contacto a {
+            color: var(--color-primary);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .error-contacto a:hover {
+            text-decoration: underline;
+        }
+
+        /* ============================================
+           RESPONSIVE
+           ============================================ */
+        @media (max-width: 600px) {
+            .error-codigo {
+                font-size: 5rem;
+                margin-bottom: -0.5rem;
+            }
+
+            .error-icono {
+                font-size: 3rem;
+            }
+
+            .error-container h1 {
+                font-size: 1.5rem;
+            }
+
+            .error-container p {
+                font-size: 1rem;
+            }
+
+            .error-container {
+                padding: 24px;
+            }
+
+            .btn-primary,
+            .btn-secondary {
+                width: 100%;
+                justify-content: center;
+                padding: 12px 20px;
+                font-size: 0.95rem;
+            }
+
+            .error-botones {
+                flex-direction: column;
+                align-items: stretch;
+            }
+        }
+
+        @media (max-width: 380px) {
+            .error-codigo {
+                font-size: 4rem;
+            }
+
+            .error-container h1 {
+                font-size: 1.3rem;
+            }
+
+            .error-container {
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <!-- Código 404 -->
+        <div class="error-codigo">404</div>
+
+        <!-- Icono -->
+        <div class="error-icono">
+            <i class="fas fa-file-circle-exclamation"></i>
+        </div>
+
+        <!-- Título -->
+        <h1>Página no encontrada</h1>
+
+        <!-- Descripción -->
+        <p>Lo sentimos, la página que buscas no existe o fue movida.<br>Te invitamos a volver al inicio o contactarnos directamente.</p>
+
+        <!-- Botones -->
+        <div class="error-botones">
+            <a href="index.html" class="btn-primary">
+                <i class="fas fa-house"></i> Ir al inicio
+            </a>
+            <a href="contacto.html" class="btn-secondary">
+                <i class="fas fa-envelope"></i> Contacto
+            </a>
+        </div>
+
+        <!-- Contacto -->
+        <div class="error-contacto">
+            <p>
+                <i class="fas fa-phone"></i> 
+                <a href="tel:+51959614829">+51 959614829</a>
+                &nbsp;·&nbsp;
+                <i class="fab fa-whatsapp"></i> 
+                <a href="https://wa.me/51959614829" target="_blank" rel="noopener">WhatsApp</a>
+                &nbsp;·&nbsp;
+                <i class="fas fa-envelope"></i> 
+                <a href="mailto:emisab.aqp@gmail.com">emisab.aqp@gmail.com</a>
+            </p>
+            <p style="margin-top: 4px; font-size: 0.8rem; color: var(--color-text-light);">
+                EMISAB - CONSULTORES & ASOCIADOS | Arequipa - Perú
+            </p>
+        </div>
+    </div>
+</body>
+</html>
