@@ -24,13 +24,15 @@
     
     <!-- Estilos -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css"
+
 </head>
+
 <body>
     
     <!-- =========================================== -->
     <!-- HEADER / NAVEGACIÓN -->
     <!-- =========================================== -->
-
     <header class="header">
         <div class="container">
             <nav class="nav">
@@ -52,9 +54,9 @@
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
                 
-                    </a>
+                <div class="nav-contacto">
                     <a href="https://wa.me/51959614829?text=Hola,%20quiero%20agendar%20una%20asesoría%20legal." 
-                    class="btn-whatsapp-nav" target="_blank" rel="noopener">
+                       class="btn-whatsapp-nav" target="_blank" rel="noopener">
                         <i class="fab fa-whatsapp"></i> Agendar
                     </a>
                 </div>
@@ -69,25 +71,24 @@
         <div class="hero-overlay"></div>
         <div class="container hero-content">
             <div class="hero-text">
-                <h1>Asesoría Legal Penal y Administrativa en Todo el Perú</h1>
-                <p>Defensa clara, directa y sin tecnicismos. Atención personalizada con más de 25 años de experiencia.</p>
+                <h1>Asesoría, Defensa y Consultoría Legal en Derecho Penal y Administrativo</h1>
+                <p>Brindamos soluciones jurídicas claras, estratégicas y efectivas en todo el Perú, con atención personalizada y experiencia en defensa de derechos.</p>
                 <div class="hero-buttons">
                     <a href="https://wa.me/51959614829?text=Hola,%20quiero%20agendar%20una%20asesoría%20legal.%20Mi%20nombre%20es%20[Nombre]%20y%20necesito%20consultar%20sobre%20[breve%20descripción]." 
                        class="btn-primary" target="_blank" rel="noopener">
                         <i class="fab fa-whatsapp"></i> Agendar Asesoría
                     </a>
-                    <a href="https://wa.me/51959614829?text=URGENTE:%20Necesito%20contactar%20a%20la%20abogada%20Lucila%20Sterling%20por%20un%20caso%20penal/administrativo." 
-                       class="btn-urgente" target="_blank" rel="noopener">
+                    <a href="tel:+51959614829" class="btn-urgente">
                         <i class="fas fa-exclamation-triangle"></i> Urgencias
                     </a>
                 </div>
                 <div class="hero-contacto-rapido">
-                    <span><i class="fas fa-phone"></i> +51 959614829</span>
-                    <span><i class="fas fa-clock"></i> Lun - Vie 8am - 6pm</span>
+                    <span><i class="fas fa-clock"></i> Lunes - Viernes: 8:00 am - 6:00 pm</span>
                 </div>
             </div>
             <div class="hero-image">
-                <!-- [FUTURA IMAGEN] -->
+                <!-- <img src="img/oficina.jpg" alt="Oficina EMISAB"> -->
+                <!-- COMENTARIO: Si la imagen no existe, se muestra el placeholder -->
                 <div class="hero-image-placeholder">
                     <i class="fas fa-scale-balanced"></i>
                     <span>EMISAB</span>
@@ -104,13 +105,14 @@
             <div class="nosotros-resumen-grid">
                 <div class="nosotros-resumen-texto">
                     <span class="section-tag">Sobre Nosotros</span>
-                    <h2>Más de 25 años de trayectoria legal</h2>
-                    <p>Somos un estudio jurídico con sede en Arequipa, especializado en derecho penal y administrativo. Nuestra fundadora, la abogada <strong>Lucila Sterling Ancco</strong> (UNSA, 1998), lidera un equipo comprometido con una defensa accesible y efectiva.</p>
-                    <p>Entendemos que cada caso es único, por eso ofrecemos atención personalizada con un lenguaje claro, evitando tecnicismos innecesarios.</p>
+                    <h2>Más de 25 años de experiencia en defensa legal</h2>
+                    <p>Somos un estudio jurídico con sede en Arequipa, especializado en Derecho Penal y Administrativo. Nuestra fundadora, la abogada <strong>Lucila Sterling Ancco</strong>, dirige el estudio y coordina la atención de los casos.</p>
+                    <p>Nuestro trabajo se centra en la evaluación jurídica de cada situación, la elaboración de estrategias legales y la representación en procedimientos administrativos y judiciales según corresponda.</p>
                     <a href="nosotros.html" class="btn-secondary">Conoce más <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="nosotros-resumen-imagen">
-                    <!-- [FUTURA IMAGEN DEL EQUIPO] -->
+                    <!-- <img src="img/equipo.png" alt="Equipo EMISAB"> -->
+                    <!-- COMENTARIO: Si la imagen no existe, se muestra el placeholder -->
                     <div class="image-placeholder">
                         <i class="fas fa-users"></i>
                         <span>Equipo EMISAB</span>
@@ -169,10 +171,10 @@
                     </div>
                     <h3>Derecho Civil</h3>
                     <ul>
-                        <li>Saneamiento de propiedades en terrenos rústicos, rurales y en terrenos eriazos</li>
+                        <li>Saneamiento de propiedades en terrenos rústicos, rurales y eriazos</li>
                         <li>Contratos y obligaciones</li>
-                        <li>Propiedad, posesión</li>
-                        <li>Asesorías sobre derechos mineros</li>
+                        <li>Propiedad y posesión</li>
+                        <li>Asesoría en derechos mineros</li>
                         <li>Asesoría integral en materia civil</li>
                     </ul>
                     <a href="servicios.html#civil" class="btn-link">Consultar <i class="fas fa-arrow-right"></i></a>
@@ -186,7 +188,7 @@
     </section>
     
     <!-- =========================================== -->
-    <!-- MODALIDADES DE ATENCIÓN (CORREGIDO) -->
+    <!-- MODALIDADES DE ATENCIÓN -->
     <!-- =========================================== -->
     <section class="modalidades">
         <div class="container">
@@ -194,6 +196,12 @@
                 <span class="section-tag">Modalidades de Atención</span>
                 <h2>Virtual o Presencial</h2>
                 <p>Elige la modalidad que mejor se adapte a tus necesidades</p>
+                <p style="margin-top: 0.5rem;"><strong>En Arequipa:</strong> Atención en nuestra oficina</p>
+                <a href="https://maps.app.goo.gl/by51dtAYYNyeuLWVA" 
+                   class="btn-secondary" target="_blank" rel="noopener" 
+                   style="margin-top: 0.5rem; display: inline-flex; padding: 10px 24px; font-size: 0.9rem;">
+                    <i class="fas fa-map-pin"></i> Ver ubicación de la oficina
+                </a>
             </div>
             
             <div class="modalidades-grid">
@@ -216,20 +224,22 @@
                     </a>
                 </div>
                 
-                <!-- Modalidad Presencial -->
+                <!-- Modalidad Presencial (SOLO FUERA DE AREQUIPA) -->
                 <div class="modalidad-card">
                     <div class="modalidad-icon">
-                        <i class="fas fa-building"></i>
+                        <i class="fas fa-plane"></i>
                     </div>
                     <h3>Atención Presencial</h3>
+                    <p style="font-size: 0.9rem; color: var(--color-text-light); margin-bottom: 1rem;">
+                        <strong>Fuera de Arequipa:</strong> Viajamos a cualquier parte del Perú
+                    </p>
                     <ul>
-                        <li><i class="fas fa-check-circle"></i> <strong>En Arequipa:</strong> Atención en nuestra oficina</li>
-                        <li><i class="fas fa-check-circle"></i> <strong>Fuera de Arequipa:</strong> Costo adicional por viaje y estadía</li>
+                        <li><i class="fas fa-check-circle"></i> Costo adicional por viaje y estadía</li>
                         <li><i class="fas fa-check-circle"></i> Previa coordinación</li>
                         <li><i class="fas fa-check-circle"></i> Para casos que lo requieran</li>
                         <li><i class="fas fa-check-circle"></i> Disponible en todo el Perú</li>
                     </ul>
-                    <a href="https://wa.me/51959614829?text=Hola,%20quiero%20coordinar%20una%20atención%20presencial." 
+                    <a href="https://wa.me/51959614829?text=Hola%2C%20quiero%20coordinar%20una%20atenci%C3%B3n%20presencial%20en%20el%20%5Bindicar%20departamento%20y%2Fo%20provincia%5D." 
                        class="btn-secondary" target="_blank" rel="noopener">
                         <i class="fab fa-whatsapp"></i> Coordinar Presencial
                     </a>
@@ -246,7 +256,7 @@
             <div class="contacto-rapido-content">
                 <div class="contacto-rapido-texto">
                     <h2>¿Necesitas asesoría legal?</h2>
-                    <p>Contáctanos y obtén una respuesta clara y oportuna.</p>
+                    <p>Contáctanos y obtén una respuesta a tu problema.</p>
                     <p><strong>Horario de atención:</strong> Lunes a Viernes 8:00 am - 6:00 pm</p>
                     <p class="contacto-urgencia"><i class="fas fa-exclamation-circle"></i> Para urgencias, contactar directamente a la abogada <strong>Lucila Sterling Ancco</strong></p>
                 </div>
@@ -254,13 +264,10 @@
                     <a href="contacto.html" class="btn-primary">
                         <i class="fas fa-envelope"></i> Contáctanos
                     </a>
-                    <a href="https://wa.me/51959614829" class="btn-whatsapp" target="_blank" rel="noopener">
+                    <a href="https://wa.me/51959614829?text=Hola,%20quiero%20consultar%20sobre%20sus%20servicios%20legales." 
+                       class="btn-whatsapp" target="_blank" rel="noopener">
                         <i class="fab fa-whatsapp"></i> WhatsApp
                     </a>
-                    <div class="contacto-telefonos">
-                        <span><i class="fas fa-phone"></i> +51 959614829</span>
-                        <span><i class="fab fa-whatsapp"></i> +51 953870664</span>
-                    </div>
                 </div>
             </div>
         </div>
@@ -295,20 +302,20 @@
                 <div class="footer-col">
                     <h4>Contacto</h4>
                     <ul class="footer-contacto">
-                        <li><i class="fas fa-phone"></i> +51 959614829</li>
-                        <li><i class="fab fa-whatsapp"></i> +51 953870664</li>
-                        <li><i class="fas fa-envelope"></i> emisab.aqp@gmail.com</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Arequipa - Perú</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+51959614829">959 614 829</a></li>
+                        <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/51953870664?text=Hola,%20quisiera%20consultar%20sobre%20sus%20servicios%20legales." target="_blank" rel="noopener">953 870 664</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:emisab.aqp@gmail.com?subject=Interés%20en%20sus%20servicios%20legales&body=Hola%2C%20estoy%20interesado%20en%20sus%20servicios%20legales.%20Me%20gustaría%20recibir%20más%20información.">emisab.aqp@gmail.com</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> <a href="https://maps.app.goo.gl/by51dtAYYNyeuLWVA" target="_blank" rel="noopener">Cayma, Arequipa - Perú</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-col">
                     <h4>Horario</h4>
                     <ul class="footer-horario">
-                        <li><i class="fas fa-clock"></i> Lun - Vie: 8:00 am - 6:00 pm</li>
-                        <li><i class="fas fa-clock"></i> Sáb - Dom: Cerrado</li>
+                        <li><i class="fas fa-clock"></i> Lunes - Viernes: 8:00 am - 6:00 pm</li>
+                        <li><i class="fas fa-clock"></i> Sábado - Domingo: Cerrado</li>
                     </ul>
-                    <p class="footer-urgencia"><i class="fas fa-exclamation-triangle"></i> Urgencias: +51 959614829</p>
+                    <p class="footer-urgencia"><i class="fas fa-exclamation-triangle"></i> <a href="tel:+51959614829">Urgencias: 959 614 829</a></p>
                 </div>
             </div>
             
@@ -332,4 +339,4 @@
     <!-- =========================================== -->
     <script src="js/main.js"></script>
 </body>
-</html>>
+</html>
